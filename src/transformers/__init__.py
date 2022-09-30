@@ -108,23 +108,23 @@ from .modeling_tf_pytorch_utils import (
 )
 
 # Pipelines
-from .pipelines import (
-    CsvPipelineDataFormat,
-    FeatureExtractionPipeline,
-    FillMaskPipeline,
-    JsonPipelineDataFormat,
-    NerPipeline,
-    PipedPipelineDataFormat,
-    Pipeline,
-    PipelineDataFormat,
-    QuestionAnsweringPipeline,
-    SummarizationPipeline,
-    TextClassificationPipeline,
-    TextGenerationPipeline,
-    TokenClassificationPipeline,
-    TranslationPipeline,
-    pipeline,
-)
+# from .pipelines import (
+#     CsvPipelineDataFormat,
+#     FeatureExtractionPipeline,
+#     FillMaskPipeline,
+#     JsonPipelineDataFormat,
+#     NerPipeline,
+#     PipedPipelineDataFormat,
+#     Pipeline,
+#     PipelineDataFormat,
+#     QuestionAnsweringPipeline,
+#     SummarizationPipeline,
+#     TextClassificationPipeline,
+#     TextGenerationPipeline,
+#     TokenClassificationPipeline,
+#     TranslationPipeline,
+#     pipeline,A
+# )
 
 # Tokenizers
 from .tokenization_albert import AlbertTokenizer
@@ -413,7 +413,7 @@ if is_torch_available():
     from .benchmark.benchmark_args import PyTorchBenchmarkArguments
 
 # TensorFlow
-if is_tf_available():
+if False: # is_tf_available():
     from .modeling_tf_utils import (
         shape_list,
         tf_top_k_top_p_filtering,
